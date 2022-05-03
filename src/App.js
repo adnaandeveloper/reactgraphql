@@ -6,10 +6,8 @@ import UserNameLazyLoading from './components/UserNameLazyLoading';
 const App = () => {
   return (
     <div>
-      <Button type="primary"> button </Button>
       <UserNameLazyLoading />
       <UsersList />
-      <UserDetails />
     </div>
   );
 };

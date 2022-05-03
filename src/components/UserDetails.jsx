@@ -6,7 +6,7 @@ const UserDetails = () => {
   console.log({ error, loading, data });
   return (
     <div>
-      <h1> soon </h1>
+      <h1> </h1>
     </div>
   );
 };
