@@ -26,6 +26,8 @@ const UserNameLazyLoading = () => {
   if (loading) return <Spinner />;
   console.log({ data });
 
+  if (error) return <h1> Error ...</h1>;
+
   return (
     <div>
       <Input
@@ -40,7 +42,9 @@ const UserNameLazyLoading = () => {
         search
       </Button>
 
-      {name}
+      {data?.characters?.results?.map((character) => (
+        <h5>{character.location.name}</h5>
+      ))}
     </div>
   );
 };

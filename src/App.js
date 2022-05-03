@@ -7,10 +7,9 @@ const App = () => {
   return (
     <div>
       <Button type="primary"> button </Button>
-
+      <UserNameLazyLoading />
       <UsersList />
       <UserDetails />
-      <UserNameLazyLoading />
     </div>
   );
 };
